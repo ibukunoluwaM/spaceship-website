@@ -40,6 +40,10 @@ body {
   transition: all 0.3s ease;
 }
 
+.crewSwiper2 .swiper-slide {
+  margin-right: 0 !important;
+}
+
 .crewSwiper .swiper-pagination-bullet-active {
   opacity: 1;
   transform: scale(1.3);

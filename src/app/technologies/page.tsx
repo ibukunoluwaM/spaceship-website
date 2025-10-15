@@ -51,7 +51,7 @@ export default function Page() {
               return `<span class="${className} border-[1px]">${index + 1}</span>`;
             },
           }}
-          spaceBetween={50}
+          spaceBetween={0}
           slidesPerView={1}
           className="crewSwiper2 text-white"
         >
@@ -61,7 +61,7 @@ export default function Page() {
                 key={index}
                 className="w-full lg:w-[80%] lg:ml-auto text-white mt-[1rem] md:mt-[5rem] flex flex-col-reverse md:flex-col-reverse  lg:flex-row gap-[3rem] lg:gap-[0rem] items-center justify-center lg:justify-between"
               >
-                <div className="w-1/2 mx-auto md:mx-auto lg:mx-[0] text-center lg:text-left h-auto">
+                <div className="w-1/2 mx-auto md:mx-auto lg:mx-[0rem] text-center lg:text-left h-auto">
                   <p className={`uppercase text-gray-600 mb-[0.5rem]`}>
                     {tech.pre}
                   </p>
@@ -74,12 +74,12 @@ export default function Page() {
                   </p>
                 </div>
 
-<div className="w-full lg:w-1/2 h-[20rem] md:h-[25rem] lg:h-auto flex justify-center lg:justify-end relative">
+<div className="w-full lg:w-1/2 h-[20rem] md:h-[25rem] lg:h-[33rem] flex justify-center lg:justify-end relative">
   <Image
     src={tech.img}
     alt="moon"
     fill
-    className="object-cover lg:object-contain w-full h-full"
+    className="object-cover w-full h-full"
   />
 </div>
 
