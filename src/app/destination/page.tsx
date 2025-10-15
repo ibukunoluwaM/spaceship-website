@@ -43,7 +43,7 @@ function Page() {
     destination[0]
   );
   return (
-    <div className="p-4 bg-[url('/destination.jpg')] bg-center bg-cover bg-repeat">
+    <div className="min-h-screen p-4 bg-[url('/destination.jpg')] bg-center bg-cover bg-repeat">
       <NavBar />
 
       {/* pick your destination */}

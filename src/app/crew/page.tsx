@@ -40,7 +40,7 @@ export default function Carousel() {
     },
   ];
   return (
-    <div className="p-4 bg-[url('/crew-background.jpg')] bg-center bg-cover bg-repeat">
+    <div className="min-h-screen p-4 bg-[url('/crew-background.jpg')] bg-center bg-cover bg-repeat">
       <NavBar />
 
       <div className="mt-[4rem] md:mx-[3rem] lg:mx-[3rem] text-center md:text-left lg:text-left">
@@ -62,13 +62,13 @@ export default function Carousel() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className=" text-white mt-[3rem] mx-[2rem] flex flex-col md:flex-col lg:flex-row items-center lg:justify-between"
+                className=" text-white mt-[3rem] mx-[2rem] flex flex-col md:flex-col lg:flex-row items-center justify-center lg:justify-between"
               >
-                <div className="w-1/2 ml-[1.5rem] mt-[2rem] text-center lg:text-left">
+                <div className="w-full lg:w-1/2 lg:ml-[1.5rem] mt-[2rem] text-center lg:text-left">
                   <p className={`uppercase text-gray-600 mb-[0.5rem]`}>{crew.post}</p>
 
                   <h2 className={`uppercase mb-[2rem] text-5xl `}>{crew.name}</h2>
-                  <p className="w-[100%] text-xs md:text-xs lg:text-md md:w-[100%] lg:w-[70%] leading-[1.8rem] mb-[2rem] md: mb-[2rem] lg:mb-[0rem]">{crew.text}</p>
+                  <p className="w-full text-xs md:text-xs lg:text-md md:w-[100%] lg:w-[70%] leading-[1.8rem] mb-[2rem] md: mb-[2rem] lg:mb-[0rem]">{crew.text}</p>
                 </div>
 
                 <div className="w-1/2 mt-[3rem]">

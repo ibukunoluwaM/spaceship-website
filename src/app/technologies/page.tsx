@@ -53,13 +53,13 @@ export default function Page() {
           }}
           spaceBetween={50}
           slidesPerView={1}
-          className="crewSwiper2 text-white h-[80vh]"
+          className="crewSwiper2 text-white"
         >
           {technologies.map((tech, index) => (
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="w-full lg:w-[80%] lg:ml-auto text-white mt-[1rem] md:mt-[5rem] flex flex-col md:flex-col  lg:flex-row gap-[3rem] lg:gap-[0rem] items-center justify-center lg:justify-between"
+                className="w-full lg:w-[80%] lg:ml-auto text-white mt-[1rem] md:mt-[5rem] flex flex-col-reverse md:flex-col-reverse  lg:flex-row gap-[3rem] lg:gap-[0rem] items-center justify-center lg:justify-between"
               >
                 <div className="w-1/2 mx-auto md:mx-auto lg:mx-[0] text-center lg:text-left h-auto">
                   <p className={`uppercase text-gray-600 mb-[0.5rem]`}>
@@ -74,17 +74,15 @@ export default function Page() {
                   </p>
                 </div>
 
-                <div className="w-1/2  flex justify-end">
-                 <div className="w-[100%] flex justify-end">
-                    <Image
-                    src={tech.img}
-                    alt="moon"
-                    width={600}
-                    height={600}
-                    // className="w-[100%] md:w-[90%] lg:w-[75%]"
-                  />
-                 </div>
-                </div>
+<div className="w-full lg:w-1/2 h-[20rem] md:h-[25rem] lg:h-auto flex justify-center lg:justify-end relative">
+  <Image
+    src={tech.img}
+    alt="moon"
+    fill
+    className="object-cover lg:object-contain w-full h-full"
+  />
+</div>
+
               </div>
             </SwiperSlide>
           ))}

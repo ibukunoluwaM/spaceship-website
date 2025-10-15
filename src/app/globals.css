@@ -97,17 +97,21 @@ body {
 
 /* -------- Responsive adjustments -------- */
 @media (max-width: 800px) {
+  body {
+    position: relative;
+  }
   .crewSwiper .swiper-pagination {
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 42%;
     text-align: left;
   }
 
   .crewSwiper2 .swiper-pagination {
     position: absolute;
-    top: 64%;
-    left: 0%;
+    bottom: 0%; /* controls how close it is to the bottom */
+    left: 0;
+    right: 0;
     flex-direction: row;
     justify-content: flex-end;
     text-align: center;
